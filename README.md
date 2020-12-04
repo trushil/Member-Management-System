@@ -18,11 +18,17 @@ If you're using any code style like xo, standard etc. That will help others whil
 ## Screenshots
 Include logo/demo screenshot etc.
 
-## Tech/framework used
-Ex. -
+## Tech/Framework used
 
 <b>Built with</b>
-- [Electron](https://electron.atom.io)
+- ASP .NET Framework 4.5
+
+<b>Scripting Languages</b>
+- C#
+- Javascript
+
+<b>Design</b>
+- Bootstrap 5
 
 ## Features
 A standard tool which can be used by any organization to manage the administration process.
@@ -36,7 +42,6 @@ Not needed.
 * Trushil Patel (tpg246@uregina.ca)
 * Darpan Luthra
 
-#### Anything else that seems useful
 
 ## License
 A short snippet describing the license (MIT, Apache etc)
