@@ -2,7 +2,7 @@
 The project is about a web application that is developed based on MVC architecture.
 
 ## Project Contributors
-* Trushil Patel
+* Trushil Patel (tpg246@uregina.ca)
 * Darpan Luthra
 
 
