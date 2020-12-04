@@ -3,13 +3,6 @@
 The project is about a web application that is developed based on MVC architecture.
 
 
-
-
-
- 
-## Screenshots
-Include logo/demo screenshot etc.
-
 ## Tech/Framework used
 
 <b>Built with</b>
@@ -36,6 +29,5 @@ A standard tool which can be used by any organization to manage the administrati
 
 
 ## License
-A short snippet describing the license (MIT, Apache etc)
 
 MIT © [Trushil Patel]()
