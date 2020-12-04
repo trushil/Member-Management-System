@@ -1,0 +1,595 @@
+﻿@{
+    ViewBag.Title = "Blood_Donation_2020";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                border: 5px solid #000;
+                padding: 0;
+            }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+            .btn:hover {
+                background-color: aliceblue;
+            }
+
+            .btn.active {
+                background-color: cornflowerblue;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+    
+
+    <div style="text-align:center">
+        <br/>
+       
+    <img src="~/Content/Gallery/Blood_Donation_2020/banner.jpeg"  alt="Cinque Terre" style="width:100%; align-items:baseline" height="230"/>
+    </div>
+    <div style="text-align:center">
+        
+        
+        @*<marquee bgcolor="#66CD00" width="100%" direction="left" height="auto">
+            "On 20th September 2020, total 355 blood and 5 plazma bottles were donated to Lok Samarpan Raktdan Kendra, Varaccha, Surat!"
+        </marquee>*@
+        
+            <marquee scrollamount="5">
+                <img  src="~/Content/Gallery/Blood_Donation_2020/Congratulations.gif"  height="20%"/>
+                <h5>"On 20th September 2020, total 355 blood and 5 plazma bottles </h5>
+                <h5>were donated to Lok Samarpan Raktdan Kendra, Varaccha, Surat!"</h5>
+                <img src="~/Content/Gallery/Blood_Donation_2020/2.gif" height="40%" />
+                <img src="~/Content/Gallery/Blood_Donation_2020/Thank you.gif"  height="40%"/>
+            </marquee>
+</div>
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <h1>Blood Donation Camp 2020</h1>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (1).JPG" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (3).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (4).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (5).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (6).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (7).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (8).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (9).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (10).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (11).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (12).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (13).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (14).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (15).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (16).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (17).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (18).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (19).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (20).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (21).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (22).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (23).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (24).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (25).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (26).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (27).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (28).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (29).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (30).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (31).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (32).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (33).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (34).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (35).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (36).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (37).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (38).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (39).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (40).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (41).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (42).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (43).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (44).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (45).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (46).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (47).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (48).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (49).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (50).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (51).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (52).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (53).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (54).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (55).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (56).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (57).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (58).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (59).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (60).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (61).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (62).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (63).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (64).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (65).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (66).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (67).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (68).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (69).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (70).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (71).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (72).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (73).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (74).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (75).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (76).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (77).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (78).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (79).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (80).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (81).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (82).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (83).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (84).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (85).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (86).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (87).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (88).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (89).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (90).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (91).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (92).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (93).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (94).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (95).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (96).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (97).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (98).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (99).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (100).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (101).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (102).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (103).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (104).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (105).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (106).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (107).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (108).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (109).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (110).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (111).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (112).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (113).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (114).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (115).jpg" style="width:100%">
+        </div>
+
+
+        <div class="column">
+            
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (116).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (117).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (118).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (119).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (120).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (130).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (140).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (150).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (160).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (161).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (162).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (163).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (164).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (165).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (166).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (167).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (168).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (169).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (170).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (171).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (172).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (173).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (174).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (175).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (176).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (177).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (178).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (179).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (180).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (181).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (182).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (183).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (184).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (185).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (186).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (187).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (188).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (189).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (190).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (191).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (192).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (193).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (194).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (195).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (196).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (197).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (198).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (199).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (200).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (201).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (202).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (203).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (204).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (205).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (206).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (207).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (208).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (209).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (210).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (211).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (212).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (213).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (214).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (215).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (216).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (217).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (218).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (219).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (220).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (221).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (222).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (223).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (224).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (225).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (226).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (227).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (228).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (229).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (230).jpg" style="width:100%">
+
+        </div>
+
+        <div class="column">
+
+            
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (231).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (232).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (233).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (234).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (235).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (236).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (237).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (238).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (239).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (240).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (241).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (242).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (243).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (244).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (245).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (246).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (247).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (248).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (249).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (250).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (251).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (252).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (253).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (254).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (255).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (256).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (257).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (258).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (259).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (260).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (261).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (262).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (263).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (264).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (265).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (266).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (267).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (268).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (269).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (270).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (271).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (272).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (273).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (274).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (275).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (276).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (277).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (278).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (279).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (280).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (281).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (282).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (283).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (284).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (285).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (286).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (287).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (288).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (289).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (290).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (291).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (292).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (293).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (294).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (295).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (296).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (297).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (298).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (299).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (300).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (301).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (302).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (303).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (304).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (305).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (306).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (307).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (308).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (309).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (310).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (311).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (312).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (313).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (314).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (315).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (316).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (317).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (318).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (319).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (320).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (321).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (322).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (323).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (324).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (325).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (326).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (327).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (328).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (329).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (330).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (331).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (332).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (333).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (334).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (335).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (336).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (337).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (338).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (339).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (340).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (341).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (342).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (343).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (344).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (345).jpg" style="width:100%">
+
+
+        </div>
+
+        <div class="column">
+
+
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (346).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (347).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (348).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (349).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (350).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (351).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (352).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (353).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (354).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (355).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (356).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (357).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (358).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (359).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (360).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (361).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (362).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (363).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (364).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (365).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (366).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (367).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (368).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (369).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (370).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (371).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (372).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (373).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (374).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (375).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (376).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (377).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (378).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (379).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (380).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (381).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (382).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (383).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (384).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (385).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (386).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (387).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (388).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (389).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (390).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (391).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (392).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (393).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (394).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (395).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (396).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (397).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (398).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (399).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (400).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (401).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (402).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (403).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (404).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (405).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (406).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (407).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (408).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (409).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (410).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (411).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (412).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (413).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (414).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (415).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (416).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (417).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (418).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (419).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (420).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (421).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (422).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (423).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (424).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (425).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (426).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (427).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (428).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (429).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (430).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (431).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (432).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (433).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (434).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (435).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (436).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (437).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (438).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (439).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (440).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (441).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (442).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (443).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (444).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (445).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (446).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (447).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (448).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (449).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (450).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (451).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (452).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (453).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (454).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (455).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (456).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (457).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (458).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Blood_Donation_2020/Blood_Donation_2020 (459).jpg" style="width:100%">
+
+
+        </div>
+    </div>
+
+    <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.remove("active");
+        this.className += " active";
+
+    });
+}
+    </script>
+
+</body>
+</html>
+
+
+

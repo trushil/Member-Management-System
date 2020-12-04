@@ -1,0 +1,221 @@
+﻿
+@model surathardwarewebsite.Models.websiteEntities2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="~/Content/TestProfile.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    @using (Html.BeginForm("Update",
+                                        "Members",
+                                        FormMethod.Post,
+                                        new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+
+        @*<label for="file">Upload Image:</label>
+        <input type="file" name="file" id="file" /><br><br>
+        <input type="submit" value="Upload Image" />
+        <br><br>*@
+
+
+
+    <div style="background-color: #F0FFFF  ; width:auto">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="content" class="content content-full-width">
+                    <!-- begin profile -->
+                    <div class="profile" style="width:100%">
+                        <div class="profile-header">
+                            <!-- BEGIN profile-header-cover -->
+                            <div class="profile-header-cover"></div>
+                            <!-- END profile-header-cover -->
+                            <!-- BEGIN profile-header-content -->
+                            <div class="profile-header-content">
+                                <!-- BEGIN profile-header-img -->
+                                <div class="profile-header-img">
+                                    <img src="~/Content/UserAccount_Profile_Photos/@(ViewBag.ProfilephotoPath)" />
+                                </div>
+                                <!-- END profile-header-img -->
+                                <!-- BEGIN profile-header-info -->
+                                <div class="profile-header-info">
+                                    <h4 class="m-t-10 m-b-5">@ViewBag.MData.Firm_Name</h4>
+                                    <p class="m-b-10"> @ViewBag.MData.Membership_Id</p>
+                                    <input type="file" name="file" id="file" /><br><br>
+                                </div>
+                                <!-- END profile-header-info -->
+                            </div>
+                            <!-- END profile-header-content -->
+                            <!-- BEGIN profile-header-tab -->
+                            <ul class="profile-header-tab nav nav-tabs" style="background-color: #DCDCDC">
+                                <li class="nav-item"><a href="#profile-about" class="nav-link active show" data-toggle="tab">ABOUT</a></li>
+                                <li class="nav-item"><a href="#profile-photos" class="nav-link" data-toggle="tab">CONTACT</a></li>
+                                <li class="nav-item"><a href="#profile-videos" class="nav-link" data-toggle="tab">PERSONAL</a></li>
+                                <li class="nav-item"><a href="#profile-friends" class="nav-link" data-toggle="tab">FRIENDS</a></li>
+                            </ul>
+                            <!-- END profile-header-tab -->
+                        </div>
+                    </div>
+                    <!-- end profile -->
+                    <!-- begin profile-content -->
+                    <div class="profile-content">
+                        <!-- begin tab-content -->
+                        <div class="tab-content p-0">
+
+                            <!-- begin #profile-about tab -->
+                            <div class="tab-pane fade in active show" id="profile-about">
+                                <!-- begin table -->
+                                <div class="table-responsive">
+                                    <table class="table table-profile" style="border:double">
+                                        <thead>
+                                            <tr>
+                                                <th>
+
+                                                <td>
+
+                                                    <p style="text-align:right">Registration Date : @ViewBag.MData.Registration_Date</p>
+                                                    <p style="text-align:right">( Care of: @ViewBag.MData.Referral_Name )</p>
+
+                                                </td>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="highlight" style="background-color:burlywood">
+                                                <td class="field"><h5><b>Firm Name </b></h5> </td>
+                                                <td><h4><b>@ViewBag.MData.Firm_Name </b><small>[ @ViewBag.MData.Id_No ]</small></h4></td>
+
+                                            </tr>
+                                            <tr class="highlight">
+                                                <td class="field">Firm Type</td>
+                                                <td>@ViewBag.MData.Firm_Type</td>
+                                            </tr>
+                                            <tr class="highlight">
+                                                <td class="field">Trading Pattern</td>
+                                                <td>@ViewBag.MData.Trading_Pattern</td>
+                                            </tr>
+
+                                            <tr class="highlight">
+                                                <td class="field">GSTIN</td>
+                                                <td>@ViewBag.MData.Gst_No</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Address</td>
+                                                <td>@ViewBag.MData.Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Area</td>
+                                                <td>@ViewBag.MData.Area</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Zone</td>
+                                                <td>@ViewBag.MData.Zone</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Dealing In</td>
+                                                <td>
+                                                    @Html.CheckBox("C1", (bool)ViewBag.MDealing.Hardware, new { @onclick = "return false" }) Hardware
+                                                    <br />
+                                                    @Html.CheckBox("C2", (bool)ViewBag.MDealing.Building_Materials, new { @onclick = "return false" }) Building Materials
+                                                    <br />
+                                                    @Html.CheckBox("C3", (bool)ViewBag.MDealing.PVC_Pipes_Fittings, new { @onclick = "return false" }) PVC Pipes Fittings
+                                                    <br />
+                                                    @Html.CheckBox("C4", (bool)ViewBag.MDealing.Plywood, new { @onclick = "return false" }) Plywood
+                                                    <br />
+                                                    @Html.CheckBox("C5", (bool)ViewBag.MDealing.Kitchen_Accessories, new { @onclick = "return false" }) Kitchen Accessories
+                                                    <br />
+                                                    @Html.CheckBox("C6", (bool)ViewBag.MDealing.Tools, new { @onclick = "return false" }) Tools
+                                                    <br />
+                                                    @Html.CheckBox("C7", (bool)ViewBag.MDealing.Cement_Steel, new { @onclick = "return false" }) Cement - Steel
+                                                    <br />
+                                                    @Html.CheckBox("C8", (bool)ViewBag.MDealing.Sanitary, new { @onclick = "return false" }) Sanitary
+                                                    <br />
+                                                    @Html.CheckBox("C9", (bool)ViewBag.MDealing.Paints, new { @onclick = "return false" }) Paints
+                                                    <br />
+                                                    @Html.CheckBox("C10", (bool)ViewBag.MDealing.MS_Pipes_Gi_Pipes, new { @onclick = "return false" }) MS Pipes - Gi Pipes
+                                                    <br />
+                                                    @Html.CheckBox("C10", (bool)ViewBag.MDealing.Electricals, new { @onclick = "return false" }) Electricals
+                                                </td>
+                                            <tr>
+
+                                            <tr>
+                                                <td class="field">Contact Person 1 Name</td>
+                                                <td>@ViewBag.MData.Contact_Person1_Name</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Contact Person 1 Mobile </td>
+                                                <td><i class="fa fa-mobile fa-lg m-r-5"></i> @ViewBag.MData.Contact_Person1_Mobile</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Contact Person 2 Name</td>
+                                                <td>@ViewBag.MData.Contact_Person2_Name</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Contact Person 2 Mobile </td>
+                                                <td><i class="fa fa-mobile fa-lg m-r-5"></i> @ViewBag.MData.Contact_Person2_Mobile</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="field">Landline</td>
+                                                <td>@ViewBag.MData.Landline_Contact_No</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="field">Website</td>
+                                                <td>@ViewBag.MData.Website</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Birth Date</td>
+                                                <td>@ViewBag.MData.Birthdate_Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Anniversary Date</td>
+                                                <td>@ViewBag.MData.Anniversary_Date</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="field">Blood Group</td>
+                                                <td>@ViewBag.MData.Blood_Group</td>
+                                            </tr>
+
+                                            <tr class="highlight">
+                                                <td class="field">&nbsp;</td>
+                                                <td class="p-t-10 p-b-10">
+                                                    <button type="submit" class="btn btn-primary width-150">Update</button>
+                                                    <button type="submit" class="btn btn-white btn-white-without-border width-150 m-l-5">Cancel</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- end table -->
+                            </div>
+
+
+                            <!-- end #profile-about tab -->
+                        </div>
+
+
+                        <!-- end tab-content -->
+
+                    </div>
+
+
+                    <!-- end profile-content -->
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+    }
+</body>
+
+</html>
+
+

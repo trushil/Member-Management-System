@@ -1,0 +1,247 @@
+﻿@{
+        ViewBag.Title = "Gallery_AGM_2";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+            .btn:hover {
+                background-color: aliceblue;
+            }
+
+            .btn.active {
+                background-color: cornflowerblue;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <h1>AGM 2</h1>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (1).JPG" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (3).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (4).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (5).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (6).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (7).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (8).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (9).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (10).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (11).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (12).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (13).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (14).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (15).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (16).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (17).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (18).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (19).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (20).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (21).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (22).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (23).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (24).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (25).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (26).jpg" style="width:100%">
+
+
+        </div>
+
+
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (27).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (28).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (29).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (30).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (31).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (32).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (33).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (34).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (35).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (36).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (37).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (38).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (39).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (40).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (41).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (42).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (43).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (44).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (45).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (46).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (47).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (48).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (49).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (50).jpg" style="width:100%">
+
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (51).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (52).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (53).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (54).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (55).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (56).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (57).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (58).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (59).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (60).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (61).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (62).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (63).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (64).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (65).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (66).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (67).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (68).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (69).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (70).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (71).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (72).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (73).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (74).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (75).jpg" style="width:100%">
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (76).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (77).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (78).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (79).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (80).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (81).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (82).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (83).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (84).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (85).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (86).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (87).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (88).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (89).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (90).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (91).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (92).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (93).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (94).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (95).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (96).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (97).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (98).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (100).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (101).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (102).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (103).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_2/AGM_2 (104).jpg" style="width:100%">
+
+
+        </div>
+    </div>
+
+    <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.remove("active");
+        this.className += " active";
+
+    });
+}
+    </script>
+
+</body>
+</html>
+
+

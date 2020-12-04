@@ -1,0 +1,405 @@
+﻿
+@{
+    ViewBag.Title = "Gallery_Future_Of_Retail_Trade";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                border: 5px solid #000;
+                padding: 0;
+            }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+            .btn:hover {
+                background-color: aliceblue;
+            }
+
+            .btn.active {
+                background-color: cornflowerblue;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <h1>Future Of Retail Trade</h1>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (1).JPG" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (3).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (4).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (5).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (6).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (7).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (8).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (9).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (10).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (11).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (12).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (13).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (14).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (15).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (16).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (17).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (18).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (19).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (20).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (21).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (22).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (23).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (24).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (25).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (26).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (27).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (28).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (29).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (30).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (31).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (32).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (33).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (34).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (35).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (36).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (37).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (38).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (39).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (40).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (41).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (42).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (43).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (44).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (45).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (46).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (47).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (48).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (49).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (50).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (51).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (52).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (53).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (54).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (55).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (56).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (57).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (58).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (59).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (60).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (61).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (62).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (63).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (64).jpg" style="width:100%">
+            
+
+        </div>
+
+
+        <div class="column">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (65).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (66).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (67).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (68).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (69).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (70).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (71).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (72).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (73).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (74).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (75).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (76).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (77).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (78).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (79).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (80).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (81).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (82).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (83).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (84).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (85).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (86).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (87).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (88).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (89).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (90).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (91).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (92).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (93).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (94).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (95).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (96).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (97).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (98).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (99).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (100).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (101).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (102).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (103).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (104).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (105).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (106).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (107).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (108).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (109).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (110).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (111).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (112).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (113).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (114).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (115).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (116).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (117).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (118).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (119).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (120).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (121).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (122).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (123).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (124).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (125).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (126).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (127).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (128).jpg" style="width:100%">
+            
+
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (129).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (130).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (131).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (132).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (133).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (134).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (135).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (136).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (137).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (138).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (139).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (140).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (141).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (142).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (143).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (144).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (145).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (146).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (147).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (148).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (149).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (150).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (151).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (152).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (153).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (154).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (155).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (156).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (157).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (158).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (159).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (160).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (161).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (162).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (163).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (164).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (165).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (166).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (167).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (168).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (169).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (170).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (171).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (172).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (173).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (174).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (175).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (176).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (177).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (178).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (179).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (180).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (181).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (182).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (183).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (184).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (185).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (186).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (187).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (188).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (189).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (190).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (191).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (192).jpg" style="width:100%">
+            
+
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (193).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (194).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (195).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (196).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (197).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (198).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (199).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (200).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (201).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (202).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (203).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (204).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (205).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (206).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (207).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (208).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (209).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (210).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (211).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (212).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (213).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (214).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (215).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (216).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (217).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (218).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (219).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (220).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (221).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (222).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (223).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (224).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (225).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (226).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (227).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (228).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (229).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (230).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (231).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (232).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (233).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (234).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (235).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (236).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (237).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (238).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (239).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (240).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (241).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (242).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (243).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (244).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (245).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (246).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (247).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (248).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (249).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (250).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (251).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (252).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (253).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (254).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Future_Of_Retail_Trade/Future_Of_Retail_Trade (255).jpg" style="width:100%">
+            
+
+        </div>
+    </div>
+
+    <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.remove("active");
+        this.className += " active";
+
+    });
+}
+    </script>
+
+</body>
+</html>
+
+
+

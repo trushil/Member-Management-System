@@ -1,0 +1,17 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.Members_Data>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 align="center">Export Wizard</h2>
+
+
+<div style="text-align:center; border:groove; background-color:antiquewhite">
+<label>Select the table to export:</label>
+    <input type="button" class="btn btn-info" value="Members_Data" onclick="location.href='@Url.Action("Members_Data", "Export")'" />
+    <input type="button" class="btn btn-info" value="login" onclick="location.href='@Url.Action("login", "Export")'" />
+</div>
+

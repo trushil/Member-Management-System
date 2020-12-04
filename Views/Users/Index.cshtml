@@ -1,0 +1,50 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.login>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div align="center">
+    <br /><br />
+    <p class="btn btn-default">@Html.ActionLink("Create New User", "Create")</p>
+
+</div>
+    
+<table id="example2" class="table table-bordered" style="border-width: thick; background-color:tan; width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Username.ToString()+"/" }, null) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Username.ToString() + "/" }, null) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Username.ToString() + "/" }, null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

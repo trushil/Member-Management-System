@@ -1,0 +1,60 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.login>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 align="center">Export Wizard</h2>
+
+
+<div style="text-align:center; border:groove; background-color:antiquewhite">
+    <label>Select the table to export:</label>
+    <input type="button" class="btn btn-info" value="Members_Data" onclick="location.href='@Url.Action("Members_Data", "Export")'" />
+    <input type="button" class="btn btn-info" value="login" onclick="location.href='@Url.Action("login", "Export")'" />
+</div>
+
+<table id="example" class="table table-bordered" style="border-width: thick; background-color:tan; width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Role)
+            </th>
+        </tr>
+    </tfoot>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Username)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

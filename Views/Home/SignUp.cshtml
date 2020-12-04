@@ -1,0 +1,263 @@
+﻿
+
+@model surathardwarewebsite.Models.Request
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Registration Form</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dcalendar.picker.css" rel="stylesheet">
+    <style type="text/css">
+        #deceased {
+            background-color: #FFF3F5;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .remove_field {
+            float: right;
+            cursor: pointer;
+            position: absolute;
+        }
+
+            .remove_field:hover {
+                text-decoration: none;
+            }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/dcalendar.picker.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+	$(function() {
+		//calendar call function
+		$('.datepicker').dcalendar();
+		$('.datepicker').dcalendarpicker();
+
+		    var max_fields = 10; //maximum input boxes allowed
+		    var x = 1; //initlal text box count
+
+		$('#add').click(function () {
+			if(x < max_fields){ //max input box allowed
+			    x++; //text box increment
+			    $("#addblock").before('<div class="col-md-12 col-sm-12" id="deceased">	<a href="#" class="remove_field" title="Remove">X</a>	<div class="form-group col-md-3 col-sm-3">            <label for="name">Name*</label>            <input type="text" class="form-control input-sm" id="name" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="gender">Gender*</label>            <input type="text" class="form-control input-sm" id="gender" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="age">Age*</label>            <input type="text" class="form-control input-sm" id="age" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="DOB">Date of Birth or Exact Birth Year*</label>            <input type="text" class="form-control input-sm datepicker" id="DOB'+x+'" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="DOD">Date of Death or Exact Death Year*</label>             <input type="text" class="form-control input-sm datepicker" id="DOD'+x+'" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="mother">Deceased Person\'s Mother Name*</label>            <input type="text" class="form-control input-sm" id="mother" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">            <label for="father">Deceased Person\'s Father Name*</label>            <input type="text" class="form-control input-sm" id="father" placeholder="">        </div>	<div class="form-group col-md-3 col-sm-3">	    <label for="photo">Upload Photo*</label>	    <input type="file" id="photo">	    <p class="help-block">Please upload individual photo. Group photo is not acceptable.</p>	</div></div>');
+
+				$('.datepicker').dcalendarpicker();
+			}  else{
+				alert("Only 10 Names Allowed");
+			}
+		});
+		$(document).on('click', '.remove_field', function(e){
+		        e.preventDefault();
+			$(this).parent('div').remove();
+			x--;
+		});
+
+
+	});
+    </script>
+</head>
+<body>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="panel panel-primary" style="margin:20px">
+            <div class="panel-heading" style="background-color:darkorange">
+                <h3 class="panel-title">Retail \ Wholesale \ Manufacturer SignUp Form</h3>
+            </div>
+            <div class="panel-body">
+                <form>
+                    @*<div class="col-md-12 col-sm-12">
+                        <div class="form-group col-md-6 col-sm-6">
+                            <label for="name">Registration Date*	</label>
+                            @Html.TextBoxFor(model => model.Members_Data.Registration_Date, new { @type = "date", @class = "form-control datepicker", @required = "required" })
+                            @Html.ValidationMessageFor(model => model.Members_Data.Registration_Date, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6">
+                            <label for="mobile">Receipt No.*</label>
+                            @Html.EditorFor(model => model.Members_Data.Receipt_No, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.Members_Data.Receipt_No, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-6 col-sm-6">
+                            <label for="address">Referral Id*</label>
+                            @Html.EditorFor(model => model.Members_Data.Referral_Id, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Members_Data.Referral_Id, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6">
+                            <label for="city">Referral Name*</label>
+                            @Html.EditorFor(model => model.Members_Data.Referral_Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Members_Data.Referral_Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-6 col-sm-6">
+                            <label for="state">Services To Others*</label>
+                            @Html.DropDownListFor(model => model.Members_Data.Service_To_Others, (IEnumerable<SelectListItem>)ViewData["Service_To_Others_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Members_Data.Service_To_Others, "", new { @class = "text-danger" })
+
+                        </div>
+
+                    </div>*@
+
+                    <div class="col-md-12 col-sm-12" id="deceased">
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="name">Firm Type*</label>
+                            @Html.DropDownListFor(model => model.Firm_Type, (IEnumerable<SelectListItem>)ViewData["Firm_Type_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Firm_Type, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="age">Trading Pattern*</label>
+                            @Html.DropDownListFor(model => model.Trading_Pattern, (IEnumerable<SelectListItem>)ViewData["Trading_Pattern_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Trading_Pattern, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="gender">Firm Name*</label>
+                            @Html.TextBoxFor(model => model.Firm_Name, new { @class = "form-control", placeholder = "", required = "required" })
+                            @Html.ValidationMessageFor(model => model.Firm_Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label>Address*</label>
+                            @Html.TextAreaFor(model => model.Address, new { htmlAttributes = new { @class = "form-control", @required = "required" } })
+                            @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="DOD">Area*</label>
+                            @Html.DropDownListFor(model => model.Area, (IEnumerable<SelectListItem>)ViewData["Area_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Area, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="mother">Zone*</label>
+                            @Html.DropDownListFor(model => model.Zone, (IEnumerable<SelectListItem>)ViewData["Zone_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Zone, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="father">GSTIN*</label>
+                            @Html.EditorFor(model => model.Gst_No, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Gst_No, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Landline*</label>
+                            @Html.EditorFor(model => model.Landline_Contact_No, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Landline_Contact_No, "", new { @class = "text-danger" })
+                        </div>
+
+                        @*<div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Dealing In*</label>
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Hardware, new { }) Hardware
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Building_Materials, new { }) Building Materials
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.PVC_Pipes_Fittings, new { }) PVC Pipes Fittings
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Plywood, new { }) Plywood
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Kitchen_Accessories, new { }) Kitchen Accessories
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Tools, new { }) Tools
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Cement_Steel, new { }) Cement and Steel
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Sanitary, new { }) Sanitary
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Paints, new { }) Paints
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.MS_Pipes_Gi_Pipes, new { }) MS Pipes and GI Pipes
+                            <br />
+                            @Html.CheckBoxFor(model => model.Members_Dealing.Electricals, new { }) Electricals
+                        </div>*@
+
+
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Contact_Person1_Name</label>
+                            @Html.EditorFor(model => model.Contact_Person1_Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Contact_Person1_Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Contact_Person1_Mobile</label>
+                            @Html.EditorFor(model => model.Contact_Person1_Mobile, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Contact_Person1_Mobile, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Contact_Person2_Name</label>
+                            @Html.EditorFor(model => model.Contact_Person2_Name, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Contact_Person2_Name, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Contact_Person2_Mobile</label>
+                            @Html.EditorFor(model => model.Contact_Person2_Mobile, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Contact_Person2_Mobile, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Email</label>
+                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Website</label>
+                            @Html.EditorFor(model => model.Website, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Website, "", new { @class = "text-danger" })
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">BirthDate</label>
+                            @Html.EditorFor(model => model.Birthdate_Date, new { htmlAttributes = new { @type = "date", @class = "form-control datepicker" } })
+                            @Html.ValidationMessageFor(model => model.Birthdate_Date, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Anniversary Date</label>
+                            @Html.EditorFor(model => model.Anniversary_Date, new { htmlAttributes = new { @type = "date", @class = "form-control datepicker" } })
+                            @Html.ValidationMessageFor(model => model.Anniversary_Date, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group col-md-3 col-sm-3">
+                            <label for="photo">Blood Group</label>
+                            @Html.DropDownListFor(model => model.Blood_Group, (IEnumerable<SelectListItem>)ViewData["Blood_Group_DropDown"], "-SELECT-")
+                            @Html.ValidationMessageFor(model => model.Blood_Group, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-10" style="text-align:center">
+                        <br /><br />
+                        <input type="submit" value="Submit Request" class="btn btn-success" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    }
+
+</body>
+</html>
+

@@ -1,0 +1,137 @@
+﻿@model surathardwarewebsite.Models.login
+
+@{
+    ViewBag.Title = "Change Password";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+@*@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    
+
+    <div  align="center" class="form-horizontal">
+        
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Username)
+        <br/>
+        <div class="form-horizontal">
+            @Html.Label("Change Password:-", htmlAttributes: new { @class = "control-label" })
+                <br/><br />
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control",@Type="Password" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            <br /><br />
+            <div class="btn btn-danger" align="center" style="width:auto">
+                @Html.ActionLink("Back to List", "Index","Home")
+                
+            </div>
+            <input style="width: 250px" type="submit" value="Save" class="btn btn-success" />
+         </div>   
+        
+        
+        
+
+        <div class="form-group" style="display: none">
+            @Html.LabelFor(model => model.Role, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Role, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Role, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        
+
+    </div>
+}
+
+
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>*@
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="container">
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+
+                    <div class="panel-title">@*<img src="~/Content/unnamed.png" class="img-circle" alt="cinque terre" width="50" height="50">*@Change Password</div>
+
+                </div>
+                <div style="padding-top:30px" class="panel-body">
+                    <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                    <form id="loginform" class="form-horizontal" role="form">
+                       @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.Role)
+                        @Html.HiddenFor(model=>model.Username)
+
+                        @*<div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            @Html.HiddenFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter username here" } })
+                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                        </div>*@
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                           
+                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @Type = "password", @placeholder = "Enter New password here" } })
+                            
+                        </div>
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+
+                            @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "form-control", @Type = "password", @placeholder = "Confirm New password here" } })
+
+                        </div>
+                        
+                        
+                        @*<div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            @Html.EditorFor(model => model.NewPassword, new { htmlAttributes = new { @class = "form-control", @Type = "password", @placeholder = "Enter New password here" } })
+                            
+                        </div>
+
+                        <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            @Html.EditorFor(model => model.ConfirmNewPassword, new { htmlAttributes = new { @class = "form-control", @Type = "password", @placeholder = "Confirm New password here" } })
+                            
+                        </div>*@
+
+
+
+                        <div style="margin-top:10px" class="form-group">
+                            <!-- Button -->
+                            <div class="col-sm-12 controls">
+                                <input type="submit" value="Change" class="btn btn-success btn-lg btn-block" />
+                                @*<a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>*@
+                            </div>
+                            <br><br>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+}

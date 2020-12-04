@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="websiteModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="login">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Password" Type="varchar(max)" />
+          <Property Name="Role" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="Members_Data">
+          <Key>
+            <PropertyRef Name="Membership_Id" />
+          </Key>
+          <Property Name="Membership_Id" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Registration_Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="Registered_By" Type="nvarchar" MaxLength="255" />
+          <Property Name="Id_No" Type="nvarchar" MaxLength="255" />
+          <Property Name="Receipt_No" Type="nvarchar" MaxLength="255" />
+          <Property Name="Referral_Id" Type="nvarchar" MaxLength="255" />
+          <Property Name="Referral_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Service_To_Others" Type="nvarchar" MaxLength="255" />
+          <Property Name="Trading_Pattern" Type="nvarchar" MaxLength="255" />
+          <Property Name="Firm_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Firm_Type" Type="nvarchar" MaxLength="255" />
+          <Property Name="Address" Type="nvarchar" MaxLength="255" />
+          <Property Name="Area" Type="nvarchar" MaxLength="255" />
+          <Property Name="Zone" Type="nvarchar" MaxLength="255" />
+          <Property Name="Gst_No" Type="nvarchar" MaxLength="255" />
+          <Property Name="Landline_Contact_No" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contact_Person1_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contact_Person1_Mobile" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contact_Person2_Name" Type="nvarchar" MaxLength="255" />
+          <Property Name="Contact_Person2_Mobile" Type="nvarchar" MaxLength="255" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" />
+          <Property Name="Website" Type="nvarchar" MaxLength="255" />
+          <Property Name="Birthdate_Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="Anniversary_Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="Blood_Group" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Members_Dealing">
+          <Key>
+            <PropertyRef Name="Membership_Id" />
+          </Key>
+          <Property Name="Membership_Id" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Hardware" Type="bit" Nullable="false" />
+          <Property Name="Building_Materials" Type="bit" Nullable="false" />
+          <Property Name="PVC_Pipes_Fittings" Type="bit" Nullable="false" />
+          <Property Name="Plywood" Type="bit" Nullable="false" />
+          <Property Name="Kitchen_Accessories" Type="bit" Nullable="false" />
+          <Property Name="Tools" Type="bit" Nullable="false" />
+          <Property Name="Cement_Steel" Type="bit" Nullable="false" />
+          <Property Name="Sanitary" Type="bit" Nullable="false" />
+          <Property Name="Paints" Type="bit" Nullable="false" />
+          <Property Name="MS_Pipes_Gi_Pipes" Type="bit" Nullable="false" />
+          <Property Name="Electricals" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Requests">
+          <Key>
+            <PropertyRef Name="Request_Id" />
+          </Key>
+          <Property Name="Request_Id" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Request_Type" Type="nvarchar(max)" />
+          <Property Name="Request_From" Type="nvarchar(max)" />
+          <Property Name="Request_To" Type="nvarchar(max)" />
+          <Property Name="Request_Date" Type="nvarchar(max)" />
+          <Property Name="Request_Status" Type="nvarchar(max)" />
+          <Property Name="Service_To_Others" Type="nvarchar(max)" />
+          <Property Name="Trading_Pattern" Type="nvarchar(max)" />
+          <Property Name="Firm_Name" Type="nvarchar(max)" />
+          <Property Name="Firm_Type" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Area" Type="nvarchar(max)" />
+          <Property Name="Zone" Type="nvarchar(max)" />
+          <Property Name="Gst_No" Type="nvarchar(max)" />
+          <Property Name="Landline_Contact_No" Type="nvarchar(max)" />
+          <Property Name="Contact_Person1_Name" Type="nvarchar(max)" />
+          <Property Name="Contact_Person1_Mobile" Type="nvarchar(max)" />
+          <Property Name="Contact_Person2_Name" Type="nvarchar(max)" />
+          <Property Name="Contact_Person2_Mobile" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar(max)" />
+          <Property Name="Website" Type="nvarchar(max)" />
+          <Property Name="Birthdate_Date" Type="nvarchar(max)" />
+          <Property Name="Anniversary_Date" Type="nvarchar(max)" />
+          <Property Name="Blood_Group" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="websiteModel1StoreContainer">
+          <EntitySet Name="login" EntityType="Self.login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Members_Data" EntityType="Self.Members_Data" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Members_Dealing" EntityType="Self.Members_Dealing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Requests" EntityType="Self.Requests" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="websiteModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="login">
+          <Key>
+            <PropertyRef Name="Username" />
+          </Key>
+          <Property Name="Username" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Members_Data">
+          <Key>
+            <PropertyRef Name="Membership_Id" />
+          </Key>
+          <Property Name="Membership_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Registration_Date" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Registered_By" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Id_No" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Receipt_No" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Referral_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Referral_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Service_To_Others" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Trading_Pattern" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Firm_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Firm_Type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Area" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Zone" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Gst_No" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Landline_Contact_No" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person1_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person1_Mobile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person2_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person2_Mobile" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Birthdate_Date" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Anniversary_Date" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Blood_Group" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Members_Dealing">
+          <Key>
+            <PropertyRef Name="Membership_Id" />
+          </Key>
+          <Property Name="Membership_Id" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Hardware" Type="Boolean" Nullable="false" />
+          <Property Name="Building_Materials" Type="Boolean" Nullable="false" />
+          <Property Name="PVC_Pipes_Fittings" Type="Boolean" Nullable="false" />
+          <Property Name="Plywood" Type="Boolean" Nullable="false" />
+          <Property Name="Kitchen_Accessories" Type="Boolean" Nullable="false" />
+          <Property Name="Tools" Type="Boolean" Nullable="false" />
+          <Property Name="Cement_Steel" Type="Boolean" Nullable="false" />
+          <Property Name="Sanitary" Type="Boolean" Nullable="false" />
+          <Property Name="Paints" Type="Boolean" Nullable="false" />
+          <Property Name="MS_Pipes_Gi_Pipes" Type="Boolean" Nullable="false" />
+          <Property Name="Electricals" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="websiteEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="logins" EntityType="Self.login" />
+          <EntitySet Name="Members_Data" EntityType="Self.Members_Data" />
+          <EntitySet Name="Members_Dealing" EntityType="Self.Members_Dealing" />
+          <EntitySet Name="Requests" EntityType="websiteModel1.Request" />
+        </EntityContainer>
+        <EntityType Name="Request">
+          <Key>
+            <PropertyRef Name="Request_Id" />
+          </Key>
+          <Property Name="Request_Id" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Request_Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Request_From" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Request_To" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Request_Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Request_Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Service_To_Others" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Trading_Pattern" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Firm_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Firm_Type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Area" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Zone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Gst_No" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Landline_Contact_No" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person1_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person1_Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person2_Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Contact_Person2_Mobile" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Website" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Birthdate_Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Anniversary_Date" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Blood_Group" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="websiteModel1StoreContainer" CdmEntityContainer="websiteEntities2">
+          <EntitySetMapping Name="logins">
+            <EntityTypeMapping TypeName="websiteModel1.login">
+              <MappingFragment StoreEntitySet="login">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members_Data">
+            <EntityTypeMapping TypeName="websiteModel1.Members_Data">
+              <MappingFragment StoreEntitySet="Members_Data">
+                <ScalarProperty Name="Membership_Id" ColumnName="Membership_Id" />
+                <ScalarProperty Name="Registration_Date" ColumnName="Registration_Date" />
+                <ScalarProperty Name="Registered_By" ColumnName="Registered_By" />
+                <ScalarProperty Name="Id_No" ColumnName="Id_No" />
+                <ScalarProperty Name="Receipt_No" ColumnName="Receipt_No" />
+                <ScalarProperty Name="Referral_Id" ColumnName="Referral_Id" />
+                <ScalarProperty Name="Referral_Name" ColumnName="Referral_Name" />
+                <ScalarProperty Name="Service_To_Others" ColumnName="Service_To_Others" />
+                <ScalarProperty Name="Trading_Pattern" ColumnName="Trading_Pattern" />
+                <ScalarProperty Name="Firm_Name" ColumnName="Firm_Name" />
+                <ScalarProperty Name="Firm_Type" ColumnName="Firm_Type" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Zone" ColumnName="Zone" />
+                <ScalarProperty Name="Gst_No" ColumnName="Gst_No" />
+                <ScalarProperty Name="Landline_Contact_No" ColumnName="Landline_Contact_No" />
+                <ScalarProperty Name="Contact_Person1_Name" ColumnName="Contact_Person1_Name" />
+                <ScalarProperty Name="Contact_Person1_Mobile" ColumnName="Contact_Person1_Mobile" />
+                <ScalarProperty Name="Contact_Person2_Name" ColumnName="Contact_Person2_Name" />
+                <ScalarProperty Name="Contact_Person2_Mobile" ColumnName="Contact_Person2_Mobile" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Birthdate_Date" ColumnName="Birthdate_Date" />
+                <ScalarProperty Name="Anniversary_Date" ColumnName="Anniversary_Date" />
+                <ScalarProperty Name="Blood_Group" ColumnName="Blood_Group" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Members_Dealing">
+            <EntityTypeMapping TypeName="websiteModel1.Members_Dealing">
+              <MappingFragment StoreEntitySet="Members_Dealing">
+                <ScalarProperty Name="Membership_Id" ColumnName="Membership_Id" />
+                <ScalarProperty Name="Hardware" ColumnName="Hardware" />
+                <ScalarProperty Name="Building_Materials" ColumnName="Building_Materials" />
+                <ScalarProperty Name="PVC_Pipes_Fittings" ColumnName="PVC_Pipes_Fittings" />
+                <ScalarProperty Name="Plywood" ColumnName="Plywood" />
+                <ScalarProperty Name="Kitchen_Accessories" ColumnName="Kitchen_Accessories" />
+                <ScalarProperty Name="Tools" ColumnName="Tools" />
+                <ScalarProperty Name="Cement_Steel" ColumnName="Cement_Steel" />
+                <ScalarProperty Name="Sanitary" ColumnName="Sanitary" />
+                <ScalarProperty Name="Paints" ColumnName="Paints" />
+                <ScalarProperty Name="MS_Pipes_Gi_Pipes" ColumnName="MS_Pipes_Gi_Pipes" />
+                <ScalarProperty Name="Electricals" ColumnName="Electricals" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Requests">
+            <EntityTypeMapping TypeName="websiteModel1.Request">
+              <MappingFragment StoreEntitySet="Requests">
+                <ScalarProperty Name="Blood_Group" ColumnName="Blood_Group" />
+                <ScalarProperty Name="Anniversary_Date" ColumnName="Anniversary_Date" />
+                <ScalarProperty Name="Birthdate_Date" ColumnName="Birthdate_Date" />
+                <ScalarProperty Name="Website" ColumnName="Website" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Contact_Person2_Mobile" ColumnName="Contact_Person2_Mobile" />
+                <ScalarProperty Name="Contact_Person2_Name" ColumnName="Contact_Person2_Name" />
+                <ScalarProperty Name="Contact_Person1_Mobile" ColumnName="Contact_Person1_Mobile" />
+                <ScalarProperty Name="Contact_Person1_Name" ColumnName="Contact_Person1_Name" />
+                <ScalarProperty Name="Landline_Contact_No" ColumnName="Landline_Contact_No" />
+                <ScalarProperty Name="Gst_No" ColumnName="Gst_No" />
+                <ScalarProperty Name="Zone" ColumnName="Zone" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Firm_Type" ColumnName="Firm_Type" />
+                <ScalarProperty Name="Firm_Name" ColumnName="Firm_Name" />
+                <ScalarProperty Name="Trading_Pattern" ColumnName="Trading_Pattern" />
+                <ScalarProperty Name="Service_To_Others" ColumnName="Service_To_Others" />
+                <ScalarProperty Name="Request_Status" ColumnName="Request_Status" />
+                <ScalarProperty Name="Request_Date" ColumnName="Request_Date" />
+                <ScalarProperty Name="Request_To" ColumnName="Request_To" />
+                <ScalarProperty Name="Request_From" ColumnName="Request_From" />
+                <ScalarProperty Name="Request_Type" ColumnName="Request_Type" />
+                <ScalarProperty Name="Request_Id" ColumnName="Request_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

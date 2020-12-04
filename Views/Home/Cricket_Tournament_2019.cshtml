@@ -1,0 +1,588 @@
+﻿@{
+    ViewBag.Title = "Cricket_Tournament_2019";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                border: 5px solid #000;
+                padding: 0;
+            }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+            .btn:hover {
+                background-color: aliceblue;
+            }
+
+            .btn.active {
+                background-color: cornflowerblue;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+
+    
+    
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <h1>Cricket Tournament 2019</h1>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (1).JPG" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (3).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (4).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (5).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (6).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (7).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (8).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (9).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (10).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (11).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (12).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (13).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (14).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (15).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (16).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (17).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (18).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (19).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (20).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (21).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (22).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (23).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (24).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (25).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (26).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (27).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (28).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (29).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (30).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (31).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (32).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (33).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (34).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (35).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (36).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (37).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (38).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (39).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (40).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (41).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (42).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (43).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (44).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (45).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (46).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (47).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (48).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (49).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (50).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (51).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (52).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (53).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (54).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (55).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (56).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (57).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (58).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (59).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (60).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (61).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (62).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (63).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (64).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (65).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (66).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (67).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (68).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (69).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (70).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (71).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (72).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (73).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (74).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (75).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (76).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (77).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (78).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (79).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (80).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (81).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (82).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (83).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (84).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (85).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (86).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (87).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (88).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (89).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (90).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (91).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (92).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (93).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (94).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (95).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (96).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (97).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (98).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (99).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (100).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (101).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (102).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (103).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (104).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (105).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (106).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (107).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (108).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (109).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (110).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (111).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (112).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (113).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (114).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (115).jpg" style="width:100%">
+        </div>
+
+
+        <div class="column">
+
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (116).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (117).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (118).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (119).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (120).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (130).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (140).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (150).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (160).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (161).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (162).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (163).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (164).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (165).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (166).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (167).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (168).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (169).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (170).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (171).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (172).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (173).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (174).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (175).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (176).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (177).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (178).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (179).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (180).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (181).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (182).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (183).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (184).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (185).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (186).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (187).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (188).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (189).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (190).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (191).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (192).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (193).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (194).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (195).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (196).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (197).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (198).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (199).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (200).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (201).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (202).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (203).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (204).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (205).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (206).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (207).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (208).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (209).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (210).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (211).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (212).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (213).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (214).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (215).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (216).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (217).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (218).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (219).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (220).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (221).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (222).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (223).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (224).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (225).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (226).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (227).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (228).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (229).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (230).jpg" style="width:100%">
+
+        </div>
+
+        <div class="column">
+
+
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (231).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (232).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (233).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (234).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (235).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (236).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (237).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (238).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (239).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (240).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (241).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (242).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (243).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (244).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (245).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (246).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (247).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (248).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (249).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (250).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (251).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (252).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (253).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (254).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (255).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (256).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (257).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (258).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (259).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (260).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (261).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (262).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (263).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (264).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (265).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (266).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (267).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (268).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (269).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (270).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (271).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (272).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (273).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (274).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (275).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (276).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (277).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (278).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (279).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (280).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (281).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (282).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (283).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (284).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (285).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (286).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (287).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (288).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (289).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (290).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (291).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (292).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (293).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (294).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (295).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (296).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (297).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (298).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (299).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (300).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (301).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (302).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (303).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (304).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (305).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (306).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (307).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (308).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (309).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (310).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (311).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (312).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (313).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (314).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (315).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (316).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (317).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (318).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (319).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (320).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (321).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (322).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (323).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (324).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (325).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (326).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (327).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (328).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (329).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (330).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (331).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (332).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (333).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (334).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (335).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (336).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (337).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (338).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (339).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (340).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (341).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (342).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (343).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (344).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (345).jpg" style="width:100%">
+
+
+        </div>
+
+        <div class="column">
+
+
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (346).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (347).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (348).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (349).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (350).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (351).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (352).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (353).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (354).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (355).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (356).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (357).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (358).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (359).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (360).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (361).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (362).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (363).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (364).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (365).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (366).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (367).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (368).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (369).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (370).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (371).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (372).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (373).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (374).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (375).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (376).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (377).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (378).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (379).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (380).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (381).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (382).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (383).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (384).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (385).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (386).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (387).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (388).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (389).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (390).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (391).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (392).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (393).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (394).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (395).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (396).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (397).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (398).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (399).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (400).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (401).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (402).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (403).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (404).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (405).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (406).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (407).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (408).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (409).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (410).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (411).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (412).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (413).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (414).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (415).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (416).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (417).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (418).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (419).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (420).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (421).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (422).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (423).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (424).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (425).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (426).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (427).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (428).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (429).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (430).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (431).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (432).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (433).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (434).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (435).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (436).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (437).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (438).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (439).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (440).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (441).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (442).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (443).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (444).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (445).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (446).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (447).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (448).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (449).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (450).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (451).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (452).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (453).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (454).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (455).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (456).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (457).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (458).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (459).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (460).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (461).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (462).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (463).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (464).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (465).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (466).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (467).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (468).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (469).jpg" style="width:100%">
+            <img src="~/Content/Gallery/Cricket_Tournament_2019/Cricket_Tournament_2019 (470).jpg" style="width:100%">
+
+
+        </div>
+    </div>
+
+    <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.remove("active");
+        this.className += " active";
+
+    });
+}
+    </script>
+
+</body>
+</html>
+
+
+

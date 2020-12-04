@@ -1,0 +1,267 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.Members_Data>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 align="center">Export Wizard</h2>
+
+
+<div style="text-align:center; border:groove; background-color:antiquewhite">
+    <label>Select the table to export:</label>
+    <input type="button" class="btn btn-info" value="Members_Data" onclick="location.href='@Url.Action("Members_Data", "Export")'" />
+    <input type="button" class="btn btn-info" value="login" onclick="location.href='@Url.Action("login", "Export")'" />
+</div>
+
+<table id="example" class="table table-bordered" style="border-width: thick; background-color:tan; width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Membership_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registered_By)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Receipt_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referral_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referral_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Service_To_Others)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Trading_Pattern)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firm_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firm_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Zone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gst_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Landline_Contact_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person1_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person1_Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person2_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person2_Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Website)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Birthdate_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anniversary_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blood_Group)
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Membership_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registration_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Registered_By)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Receipt_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referral_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Referral_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Service_To_Others)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Trading_Pattern)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firm_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Firm_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Zone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gst_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Landline_Contact_No)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person1_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person1_Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person2_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact_Person2_Mobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Website)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Birthdate_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Anniversary_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Blood_Group)
+            </th>
+        </tr>
+    </tfoot>
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Membership_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Registration_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Registered_By)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Id_No)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Receipt_No)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Referral_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Referral_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Service_To_Others)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Trading_Pattern)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Firm_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Firm_Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Area)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Zone)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Gst_No)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Landline_Contact_No)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Contact_Person1_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Contact_Person1_Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Contact_Person2_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Contact_Person2_Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Website)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Birthdate_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Anniversary_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Blood_Group)
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+

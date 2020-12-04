@@ -1,0 +1,96 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.Request>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2 align="center">Requests</h2>
+
+<table id="example4" class="table table-bordered" style="border-width: thick; background-color:tan; width:100%">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_From)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_To)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Status)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_From)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_To)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Request_Status)
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+    </tfoot>
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Request_Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Request_Type)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Request_From)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Request_To)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Request_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Request_Status)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Request_Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+

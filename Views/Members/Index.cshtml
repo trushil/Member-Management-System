@@ -1,0 +1,147 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.Members_Data>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 align="center">Search In Member's Directory</h2>
+<div align="center">
+
+    @if (User.Identity.IsAuthenticated == true)
+    {
+
+        if (User.IsInRole("a"))
+        {
+            <p class="btn btn-default">
+                @Html.ActionLink("Add New Member", "Create")
+            </p>
+        }
+    }
+            
+    </div>
+
+@if (User.Identity.IsAuthenticated == true)
+{
+    if (User.IsInRole("a"))
+    {
+<table id="example2" class="table table-bordered" style="border-width: thick;background-color:tan; align-content:center">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Membership_Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id_No)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.Firm_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Area)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trading_Pattern)
+        </th>
+        <th>
+            Action
+        </th>
+        
+       
+    </tr>
+        </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+    <tr>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Membership_Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id_No)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Firm_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Area)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trading_Pattern)
+        </td>
+        
+        <td>
+           
+           @Html.ActionLink("Edit", "Edit", new { id = item.Membership_Id }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Membership_Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Membership_Id })
+            
+        </td>
+    </tr>
+}
+        </tbody>
+</table>
+    }
+    else
+    {
+        <table id="example2" class="table table-bordered" style="border-width: thick;background-color:tan; align-content:center">
+            <thead>
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Membership_Id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Id_No)
+                    </th>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Firm_Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Area)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Trading_Pattern)
+                    </th>
+                    <th>
+                        Action
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Membership_Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id_No)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Firm_Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Area)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Trading_Pattern)
+                        </td>
+
+                        <td>
+
+                            @Html.ActionLink("Details", "Details", new { id = item.Membership_Id })
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+}

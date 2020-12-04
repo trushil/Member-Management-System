@@ -1,0 +1,124 @@
+﻿@model IEnumerable<surathardwarewebsite.Models.datum>
+
+@{
+    ViewBag.Title = "exportReport";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>exportReport Page</h2>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            /*width: 100%;*/
+            margin: 1em auto;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">My Account Details</h2>
+    <p>
+        <a class="btn btn-success" href="@Url.Action("exportReport")">Download Certificate</a>
+    </p>
+
+    <table class="table-bordered" style="background-color:tan">
+
+        <tr>
+            <th style="text-align:center; background-color:cadetblue" colspan="4">-:Firm Details:-</th>
+
+        </tr>
+        <tr>
+            <th>Membership Id: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Id)</td>
+        </tr>
+        <tr>
+            <th>Firm Name: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Name)</td>
+        </tr>
+        <tr>
+            <th>Area: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Area)</td>
+        </tr>
+        <tr>
+            <th>Dealing In: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Dealing)</td>
+        </tr>
+        <tr>
+            <th>Firm Type: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Type)</td>
+        </tr>
+        <tr>
+            <th>GSTIN:</th>
+            <td colspan="3">@Html.DisplayFor(model => model.Gstin)</td>
+        </tr>
+        <tr>
+            <th>Trading pattern: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Trading_Pattern)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center; background-color:cadetblue" colspan="4">-:Contact details:-</th>
+        </tr>
+        <tr>
+            <th>Address: </th>
+            <td style="white-space: normal" colspan="3">@Html.DisplayFor(model => model.Address)</td>
+        </tr>
+
+        <tr>
+            <th>Contact Person1 Name:</th>
+            <td>@Html.DisplayFor(model => model.c_person1_Name)</td>
+            <th>Contact Person1 Mob:</th>
+            <td>@Html.DisplayFor(model => model.c_person1_Mob)</td>
+        </tr>
+        <tr>
+            <th>Contact Person2 Name:</th>
+            <td>@Html.DisplayFor(model => model.c_person2_Name)</td>
+            <th>Contact Person2 Mob:</th>
+            <td>@Html.DisplayFor(model => model.c_person2_Mob)</td>
+        </tr>
+        <tr>
+
+            <th colspan="2"></th>
+            <th>Landline: </th>
+            <td colspan="2">@Html.DisplayFor(model => model.Landline)</td>
+        </tr>
+        <tr>
+            <th>E-Mail: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Email)</td>
+        </tr>
+        <tr>
+            <th>Website: </th>
+            <td colspan="3">@Html.DisplayFor(model => model.Website)</td>
+        </tr>
+        <tr>
+            <th style="text-align:center; background-color:cadetblue" colspan="4">-:Personal Details:-</th>
+
+        </tr>
+        <tr>
+            <th>Birthdate (dd/mm/yyyy):</th>
+            <td colspan="3">@Html.DisplayFor(model => model.Birthdate)</td>
+        </tr>
+        <tr>
+            <th>Anniversary (dd/mm/yyyy):</th>
+            <td colspan="3">@Html.DisplayFor(model => model.Anniversary)</td>
+        </tr>
+        <tr>
+            <th>Blood Group:</th>
+            <td colspan="3">@Html.DisplayFor(model => model.Blood)</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+

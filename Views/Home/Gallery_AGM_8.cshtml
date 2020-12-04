@@ -1,0 +1,373 @@
+﻿
+@{
+    ViewBag.Title = "Gallery_AGM_8";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+
+        /* Create two equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%; /* IE 10 */
+            flex: 25%;
+            padding: 0 4px;
+        }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                border: 5px solid #000;
+                padding: 0;
+            }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 10px 16px;
+            background-color: #f1f1f1;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+            .btn:hover {
+                background-color: aliceblue;
+            }
+
+            .btn.active {
+                background-color: cornflowerblue;
+                color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <h1>AGM 8</h1>
+        <p>Click on the buttons to change the grid view.</p>
+        <button class="btn" onclick="one()">1</button>
+        <button class="btn" onclick="two()">2</button>
+        <button class="btn" onclick="four()">4</button>
+    </div>
+
+    <!-- Photo Grid -->
+    <div class="row">
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (1).JPG" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (3).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (4).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (5).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (6).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (7).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (8).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (9).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (10).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (11).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (12).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (13).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (14).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (15).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (16).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (17).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (18).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (19).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (20).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (21).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (22).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (23).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (24).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (25).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (26).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (27).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (28).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (29).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (30).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (31).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (32).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (33).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (34).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (35).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (36).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (37).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (38).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (39).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (40).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (41).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (42).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (43).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (44).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (45).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (46).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (47).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (48).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (49).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (50).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (51).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (52).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (53).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (54).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (55).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (56).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (57).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (58).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (59).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (60).jpg" style="width:100%">
+            
+
+        </div>
+
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (61).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (62).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (63).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (64).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (65).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (66).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (67).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (68).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (69).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (70).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (71).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (72).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (73).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (74).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (75).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (76).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (77).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (78).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (79).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (80).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (81).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (82).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (83).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (84).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (85).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (86).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (87).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (88).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (89).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (90).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (91).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (92).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (93).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (94).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (95).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (96).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (97).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (98).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (99).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (100).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (101).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (102).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (103).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (104).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (105).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (106).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (107).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (108).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (109).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (110).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (111).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (112).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (113).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (114).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (115).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (116).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (117).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (118).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (119).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (120).jpg" style="width:100%">
+            
+
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (130).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (131).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (132).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (133).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (134).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (135).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (136).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (137).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (138).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (139).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (140).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (141).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (142).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (143).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (144).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (145).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (146).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (147).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (148).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (149).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (150).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (151).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (152).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (153).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (154).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (155).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (156).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (157).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (158).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (159).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (160).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (161).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (162).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (163).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (164).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (165).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (166).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (167).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (168).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (169).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (170).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (171).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (172).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (173).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (174).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (175).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (176).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (177).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (178).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (179).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (180).jpg" style="width:100%">
+            
+
+        </div>
+
+        <div class="column">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (181).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (182).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (183).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (184).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (185).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (186).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (187).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (188).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (189).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (190).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (191).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (192).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (193).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (194).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (195).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (196).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (197).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (198).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (199).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (200).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (201).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (202).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (203).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (204).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (205).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (206).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (207).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (208).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (209).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (210).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (211).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (212).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (213).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (214).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (215).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (216).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (217).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (218).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (219).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (220).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (221).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (222).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (223).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (224).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (225).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (226).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (227).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (228).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (229).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (230).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (231).jpg" style="width:100%">
+            <img src="~/Content/Gallery/AGM_8/AGM_8 (232).jpg" style="width:100%">
+            
+
+        </div>
+    </div>
+
+    <script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.remove("active");
+        this.className += " active";
+
+    });
+}
+    </script>
+
+</body>
+</html>
+
+
+

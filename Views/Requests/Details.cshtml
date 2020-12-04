@@ -1,0 +1,210 @@
+﻿@model surathardwarewebsite.Models.Request
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_From)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_From)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_To)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_To)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Request_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Request_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Service_To_Others)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Service_To_Others)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trading_Pattern)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trading_Pattern)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Firm_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Firm_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Firm_Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Firm_Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Area)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Area)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gst_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gst_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Landline_Contact_No)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Landline_Contact_No)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact_Person1_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact_Person1_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact_Person1_Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact_Person1_Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact_Person2_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact_Person2_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contact_Person2_Mobile)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contact_Person2_Mobile)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthdate_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthdate_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anniversary_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anniversary_Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blood_Group)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blood_Group)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Request_Id }) |
+    @Html.ActionLink("Back to List", "AdminView")
+</p>

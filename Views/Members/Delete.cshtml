@@ -1,0 +1,176 @@
+﻿@model surathardwarewebsite.Models.Members_Data
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Member)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Area)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Area)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gstin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gstin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_person1_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_person1_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_person1_Mob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_person1_Mob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_person2_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_person2_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.c_person2_Mob)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.c_person2_Mob)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Landline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Landline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Birthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Birthdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Anniversary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Anniversary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dealing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dealing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Trading_Pattern)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Trading_Pattern)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Service_to_others)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Service_to_others)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blood)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
