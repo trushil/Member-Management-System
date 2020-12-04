@@ -38,4 +38,4 @@ A standard tool which can be used by any organization to manage the administrati
 ## License
 A short snippet describing the license (MIT, Apache etc)
 
-MIT © [Yourname]()
+MIT © [Trushil Patel]()
