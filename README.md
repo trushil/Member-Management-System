@@ -25,7 +25,6 @@ A standard tool which can be used by any organization to manage the administrati
 
 ## Project Contributors
 * Trushil Patel (tpg246@uregina.ca)
-* Darpan Luthra
 
 
 ## License
